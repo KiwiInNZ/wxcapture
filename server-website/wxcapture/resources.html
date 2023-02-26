@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resources</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information and resources about how to receive NOAA and Meteor weather satellites, as well as SSTV from the ISS and Amateur Aatellites">
+    <meta name="keywords" content="wxcapture, weather, satellite, NOAA, Meteor, images, ISS, Zarya, SSTV, Amsat, orbit, APT, LRPT, SDR, Mike, KiwiinNZ, Predictions, Auckland, New Zealand, storm, cyclone, hurricane, front, rain, wind, cloud">
+    <meta name="author" content="WxCapture">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="satpass.html">Predictions</a></li>
+                <li><a href="captures.html">Captures</a></li>
+                <li><a href="satellites.html">Satellites</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+        <h1 class="page-name page-name-large">Resources</h1>
+    </header>
+
+    <section class="content-section container">  
+        <!-- Header -->
+        <h2 class="section-header">Content</h2>
+        <p>In putting together this site, we have made use of multiple online resources which have assisted in multiple areas from how to build antennae, decode images and troubleshooting.</p>
+        <table>
+            <tr>
+                <td><a href="#SDR">SDR - Software Defined Radio</a></td>
+                <td><a href="#ANTENNAE">Antennae - design and construction</a></td>
+                <td><a href="#NOAA">NOAA - decoding and processing</a></td>
+            </tr>
+            <tr>
+                <td><a href="#METEOR">Meteor - decoding and processing</a></td>
+                <td><a href="#WEBSITES">Websites</a></td>
+                <td><a href="#SATPREDICT">Satellite prediction</a></td>
+            </tr>
+            
+        </table>
+
+        <!-- SDR -->
+        <a id="SDR"></a>
+        <h2 class="section-header">SDR - Software Defined Radio</h2>
+        <table>
+            <tr>
+                <th>Link</th><th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="https://airspy.com/download/">SDR#</a></td><td>Windows software to control an SDR, which includes multiple plugins.</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.rtl-sdr.com/rtl-sdr-blog-v-3-dongles-user-guide/">RTL-SDR v3 User Guide</a></td><td>User guide for the SDRs used in this project.</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/">RTL-SDR Store</a></td><td>Where to buy RTL-SDR dongles, antennae kit and FM block.</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.nooelec.com/store/sdr/sdr-addons/sawbird/sawbird-plus-noaa-308.html">Nooelec NOAA SAWbird</a></td><td>Nooelec SAWbird+ NOAA - Premium SAW Filter & Cascaded Ultra-Low Noise LNA Module for NOAA Applications. 137MHz Center Frequency</td>
+            </tr>
+        </table>
+
+        <!-- ANTENNAE -->
+        <a id="ANTENNAE"></a>
+        <h2 class="section-header">Antennae - design and construction</h2>
+        <table>
+            <tr>
+                <th>Link</th><th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="http://jcoppens.com/ant/qfh/index.en.php">QFH antenna design</a></td><td>Design information for building a QFH antenna.</td>
+            </tr>
+            <tr>
+                <td><a href="http://jcoppens.com/ant/qfh/calc.en.php">QFH calculator</a></td><td>Online calculator for designing a QFH antenna optimised for receiving NOAA and Meteor satellites.</td>
+            </tr>
+        </table>
+
+        <!-- NOAA -->
+        <a id="NOAA"></a>
+        <h2 class="section-header">NOAA - decoding and processing</h2>
+        <table>
+            <tr>
+                <th>Link</th><th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="https://wxtoimgrestored.xyz/">wxtoimg</a></td><td>wxtoimg is the NOAA decoding software used in the project. Ensure you download the beta release for latest version, including the ability to install on Windows 10 (Intel CPU only)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.wraase.de/download/wxtoimg/wxgui.pdf">wxtoimg GUI manual</a></td><td>Manual for the wxtoimg GUI with extensive information on functionality.</td>
+            </tr>
+            <tr>
+                <td><a href="https://noaasis.noaa.gov/NOAASIS/pubs/Users_Guide-Building_Receive_Stations_March_2009.pdf">NOAA Satellite Guide</a></td><td>National Oceanic and Atmospheric Administration User's Guide for Building and Operating Environmental Satellite Receiving Stations. Slightly dated in places.</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.satsignal.eu/wxsat/PagerProblems-Sewards.pdf">Interference to APT Satellite Reception</a></td><td>A great guide to identifying sources of noise in NOAA APT images and how to try to resolve them.</td>
+            </tr>
+        </table>
+
+        <!-- METEOR -->
+         <a id="METEOR"></a>
+         <h2 class="section-header">Meteor - decoding and processing</h2>
+         <table>
+             <tr>
+                <th>Link</th><th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/dbdexter-dev/meteor_demod">Meteor-M2 series demodulator</a></td><td>Software used to demodulate the recorded pass .wav file.</td>
+             </tr>
+             <tr>
+                <td><a href="https://github.com/artlav/meteor_decoder">Meteor-M2 series decoder</a></td><td>Software used to decode the demodulated pass data</td>
+             </tr>
+             <tr>
+                <td><a href="http://www.5b4az.org/">Meteor software</a></td><td>Software for decoding Meteor plus rectify-jpg which is used to correct the geometry of Meteor images.</td>
+            </tr>
+        </table>
+
+        <!-- WEBSITES -->
+        <a id="WEBSITES"></a>
+        <h2 class="section-header">Websites</h2>
+        <table>
+            <tr>
+               <th>Link</th><th>Description</th>
+           </tr>
+           <tr>
+               <td><a href="https://www.reddit.com/r/RTLSDR/">Reddit /r/RTLSDR</a></td><td>Reddit RTLSDR community</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.reddit.com/r/amateursatellites/">Reddit /r/amateursatellites</a></td><td>Reddit amateur satellites community</td>
+            </tr>
+       </table>
+
+        <!-- SATPREDICT -->
+        <a id="SATPREDICT"></a>
+        <h2 class="section-header">Satellite prediction</h2>
+        <table>
+            <tr>
+               <th>Link</th><th>Description</th>
+           </tr>
+           <tr>
+               <td><a href="http://gpredict.oz9aec.net/">Gpredict</a></td><td>Windows and Linux application to track satellites and predict orbits. This includes a command line version used by WxCapture to predict passes for capture.</td>
+            </tr>
+       </table>
+
+    </section>
+    
+    <footer class="main-footer">
+        <p id="footer-text">Page last updated at <span class="time">11:30 (NZST)</span> on <span class="time">17/04/2020</span></p>
+    </footer>
+
+</body>
+
+</html>

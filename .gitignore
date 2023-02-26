@@ -1,0 +1,28 @@
+# website
+server-website/wxcapture/satpass.html
+server-website/wxcapture/captures.html
+server-website/wxcapture/satellitestatus.html
+
+# one-page-for-all passes page experiment files
+# server-website/wxcapture/passes.html
+server-website/wxcapture/passes.json
+server-website/wxcapture/passes_example.json
+server-website/wxcapture/passpage_example.json
+server-website/wxcapture/temp_json_test.json
+
+# server code
+
+
+# pi code
+server-code/wxcapture/web/test.py
+server-code/wxcapture/web/metline.py
+server-code/wxcapture/web/twitter_test.py
+server-code/wxcapture/web/discord_webhook_test.py
+server-code/wxcapture/web/discord_test.py
+gk-2a-code/wxcapture/process/find_files - framebuffer.py
+pi-code/wxcapture/process/test.py
+pi-code/wxcapture/process/labeltest.py
+goes-code/wxcapture/process/ff.py
+pi-code/wxcapture/process/test2.py
+goes-code/wxcapture/process/test.py
+pi-code/wxcapture/process/test3.py

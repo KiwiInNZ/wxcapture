@@ -1,0 +1,8 @@
+{
+	"sftp site": "",
+	"port": "",
+	"username": "",
+	"password": "",
+	"init_dir": "",
+	"max_age": 4
+}

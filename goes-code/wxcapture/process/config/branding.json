@@ -1,0 +1,751 @@
+[
+	{
+		"sat":"goes16",
+		"desc":"GOES 16",
+		"acknowledge1":"Thanks to:",
+		"acknowledge2":"ZL1LAC",
+		"types":
+			[
+				{
+					"type":"fd",
+					"desc":"Full disc",
+					"channels":
+					[
+						{
+							"channel":"ch02",
+							"desc":"Visible red",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07_enhanced",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08_enhanced",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch09",
+							"desc":"IR mid-level",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch09_enhanced",
+							"desc":"IR mid-level",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13_enhanced",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13sanchez",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch14",
+							"desc":"IR long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch14_enhanced",
+							"desc":"IR long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch15",
+							"desc":"IR dirty long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch15_enhanced",
+							"desc":"IR dirty long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fc",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fcsanchez",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"CUSTOMLUT",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]	
+				},
+				{
+					"type":"m1",
+					"desc":"M1",
+					"channels":
+					[
+						{
+							"channel":"ch02",
+							"desc":"Visible red",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07_enhanced",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08_enhanced",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13_enhanced",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fc",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]
+				},
+				{
+					"type":"m2",
+					"desc":"M2",
+					"channels":
+					[
+						{
+							"channel":"ch02",
+							"desc":"Visible red",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07_enhanced",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08_enhanced",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13_enhanced",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fc",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]
+				}
+			]
+	},
+	{
+		"sat":"goes17",
+		"desc":"GOES 17",
+		"acknowledge1":"Thanks to:",
+		"acknowledge2":"ZL1LAC",
+		"types":
+			[
+				{
+					"type":"fd",
+					"desc":"Full disc",
+					"channels":
+					[
+						{
+							"channel":"ch02",
+							"desc":"Visible red",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch09",
+							"desc":"IR mid-level",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13sanchez",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch14",
+							"desc":"IR long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch15",
+							"desc":"IR dirty long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fc",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fcsanchez",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]	
+				},
+				{
+					"type":"m1",
+					"desc":"M1",
+					"channels":
+					[
+						{
+							"channel":"ch02",
+							"desc":"Visible red",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fc",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]
+				},
+				{
+					"type":"m2",
+					"desc":"M2",
+					"channels":
+					[
+						{
+							"channel":"ch02",
+							"desc":"Visible red",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fc",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]
+				}
+			]
+	},
+	{
+		"sat":"goes18",
+		"desc":"GOES 18",
+		"acknowledge1":"Thanks to:",
+		"acknowledge2":"ZL1LAC",
+		"types":
+			[
+				{
+					"type":"fd",
+					"desc":"Full disc",
+					"channels":
+					[
+						{
+							"channel":"ch02",
+							"desc":"Visible red",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07_enhanced",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08_enhanced",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch09",
+							"desc":"IR mid-level",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch09_enhanced",
+							"desc":"IR mid-level",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13_enhanced",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13sanchez",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch14",
+							"desc":"IR long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch14_enhanced",
+							"desc":"IR long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch15",
+							"desc":"IR dirty long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch15_enhanced",
+							"desc":"IR dirty long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fc",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fcsanchez",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"CUSTOMLUT",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]	
+				},
+				{
+					"type":"m1",
+					"desc":"M1",
+					"channels":
+					[
+						{
+							"channel":"ch02",
+							"desc":"Visible red",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07_enhanced",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08_enhanced",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13_enhanced",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fc",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]
+				},
+				{
+					"type":"m2",
+					"desc":"M2",
+					"channels":
+					[
+						{
+							"channel":"ch02",
+							"desc":"Visible red",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch07_enhanced",
+							"desc":"IR lower",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch08_enhanced",
+							"desc":"IR upper",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"ch13_enhanced",
+							"desc":"IR clean long",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"fc",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]
+				}
+			]
+	},
+	{
+		"sat":"himawari8",
+		"desc":"Himawari 8",
+		"acknowledge1":"Thanks to:",
+		"acknowledge2":"ZL1LAC",
+		"types":
+			[
+				{
+					"type":"fd",
+					"desc":"Full disc",
+					"channels":
+					[
+						{
+							"channel":"IR",
+							"desc":"Infrared",
+							"font colour": [0, 0, 0],
+							"logo":"white"
+						},
+						{
+							"channel":"VS",
+							"desc":"Visible",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"WV",
+							"desc":"Water vapour",
+							"font colour": [0, 0, 0],
+							"logo":"white"
+						},
+						{
+							"channel":"IRsanchez",
+							"desc":"Infrared",
+							"font colour": [255, 255, 255],
+							"logo":"white"
+						}
+					]	
+				}
+			]
+	},
+	{
+		"sat":"himawari9",
+		"desc":"Himawari 9",
+		"acknowledge1":"Thanks to:",
+		"acknowledge2":"ZL1LAC",
+		"types":
+			[
+				{
+					"type":"fd",
+					"desc":"Full disc",
+					"channels":
+					[
+						{
+							"channel":"IR",
+							"desc":"Infrared",
+							"font colour": [0, 0, 0],
+							"logo":"white"
+						},
+						{
+							"channel":"VS",
+							"desc":"Visible",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"WV",
+							"desc":"Water vapour",
+							"font colour": [0, 0, 0],
+							"logo":"white"
+						},
+						{
+							"channel":"IRsanchez",
+							"desc":"Infrared",
+							"font colour": [255, 255, 255],
+							"logo":"white"
+						}
+					]	
+				}
+			]
+	},
+	{
+		"sat":"combined",
+		"desc":"GOES 13/16/17/18, Himawari 8, GK-2A and Electro L-2",
+		"acknowledge1":"Thanks to:",
+		"acknowledge2":"ZL1LAC, zbychu, Aang23 & NTs OMZ",
+		"types":
+			[
+				{
+					"type":"fd",
+					"desc":"Full disc",
+					"channels":
+					[
+						{
+							"channel":"ir",
+							"desc":"Infrared",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]	
+				}
+			]
+	},
+	{
+		"sat":"goes13",
+		"desc":"GOES 13",
+		"acknowledge1":"Thanks to:",
+		"acknowledge2":"zbychu/Aang23",
+		"types":
+			[
+				{
+					"type":"fd",
+					"desc":"Full disc",
+					"channels":
+					[
+						{
+							"channel":"1",
+							"desc":"Visible 0.65um",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"2",
+							"desc":"IR 3.9um",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"3",
+							"desc":"Water vapour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"4",
+							"desc":"IR 10.7um",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"5",
+							"desc":"IR 12.0um",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						},
+						{
+							"channel":"FC",
+							"desc":"Full colour",
+							"font colour": [255, 255, 255],
+							"logo":"black"
+						}
+					]	
+				}
+			]
+	}
+	
+]

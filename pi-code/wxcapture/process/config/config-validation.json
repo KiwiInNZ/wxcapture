@@ -1,0 +1,661 @@
+{
+	"config.json": {
+		"description": "WxCapture wide configuration",
+		"required": "yes",
+		"field validation": {
+			"Location": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Location of the receiver - area, country, e.g. Auckland, New Zealand.",
+				"hidden": "no"
+			},
+			"GPS location NS": {
+				"required": "yes",
+				"valid values":  "-pattern-",
+				"description": "Latitude, e.g. 36.8400 S.",
+				"hidden": "no"
+			},
+			"GPS location EW": {
+				"required": "yes",
+				"valid values":  "-pattern-",
+				"description": "Longitude, e.g. 174.7500 E.",
+				"hidden": "no"
+			},
+			"Min Elevation-NOAA-East": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "The minimum maximum pass elevation to record a pass, e.g. 15.",
+				"hidden": "no"
+			},
+			"Min Elevation-METEOR-East": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "The minimum maximum pass elevation to record a pass, e.g. 15.",
+				"hidden": "no"
+			},
+			"Min Elevation-SSTV-East": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "The minimum maximum pass elevation to record a pass, e.g. 15.",
+				"hidden": "no"
+			},
+			"Min Elevation-AMSAT-East": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "The minimum maximum pass elevation to record a pass, e.g. 15.",
+				"hidden": "no"
+			},
+			"Min Elevation-NOAA-West": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "The minimum maximum pass elevation to record a pass, e.g. 15.",
+				"hidden": "no"
+			},
+			"Min Elevation-METEOR-West": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "The minimum maximum pass elevation to record a pass, e.g. 15.",
+				"hidden": "no"
+			},
+			"Min Elevation-SSTV-West": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "The minimum maximum pass elevation to record a pass, e.g. 15.",
+				"hidden": "no"
+			},
+			"Min Elevation-AMSAT-West": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "The minimum maximum pass elevation to record a pass, e.g. 15.",
+				"hidden": "no"
+			},
+			"Pass Highlight Elevation": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Highlight rows which exceed this maximum pass elevation, e.g. 45.",
+				"hidden": "no"
+			},
+			"Pass List Days": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Number of additional days of pass data to calculate, e.g. 3.",
+				"hidden": "no"
+			},
+			"Pass overlap threshold": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Number of seconds to potentially adjust overlapping passes e.g. 100.",
+				"hidden": "no"
+			},
+			"Hide Detail": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Hide detailed pass information, with examples including UTC date and times, e.g. yes.",
+				"hidden": "no"
+			},
+			"Hide Capturing": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Hide capture / not capture information, e.g. yes.",
+				"hidden": "no"
+			},
+			"Link Base": {
+				"required": "yes",
+				"valid values": "-any-",
+				"description": "Link base directory [note that changing this will require updating the static html pages too], e.g. /.",
+				"hidden": "no"
+			},
+			"save NOAA .wav files": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Save NOAA .wav files after pass - no will delete them.",
+				"hidden": "no"
+			},
+			"save Meteor .wav files": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Save Meteor .wav files after pass - no will delete them.",
+				"hidden": "no"
+			},
+			"email receive output": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Email output of the receive code. It will be also in the log files if the logging level is debug.",
+				"hidden": "no"
+			},
+			"plot thumbnail size": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Size of the generated plot thumbnail, e.g. 58x68.",
+				"hidden": "no"
+			},
+			"logging level": {
+				"required": "yes",
+				"valid values": "critical|error|warning|info|debug|notset",
+				"description": "Python logging level, e.g. debug.",
+				"hidden": "no"
+			},
+			"drive space location": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Drive location to monitor for space used, e.g. /dev/root.",
+				"hidden": "yes"
+			},
+			"drive space error": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Monitored drive space location percent remaining error threshold, e.g. 90.",
+				"hidden": "no"
+			},
+			"drive space warning": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Monitored drive space location percent remaining warning threshold, e.g. 70.",
+				"hidden": "no"
+			},
+			"twilight allowance": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Allowance in minutes to account for difference between sunrise and civil sunrise, e.g. 45.",
+				"hidden": "no"
+			},
+			"webpage keywords": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "A list of the keywords to be included in the header part of each dynamically created webpage, e.g. wxcapture, weather, satellite",
+				"hidden": "no"
+			},
+			"skip header and footer": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Skip headers and footers from generated pages, e.g. no.",
+				"hidden": "no"
+			}
+		}
+	},
+	"config-AMSAT.json": {
+		"description": "Amateur Satellite configuration",
+		"required": "yes",
+		"field validation": {
+			"gain 20": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for up to 20 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 30": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 20 and less than or equal to 30 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 60": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 30 and less than or equal to 60 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 90": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 60 and less than or equal to 90 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"auto gain": {
+				"required": "no",
+				"valid values": "yes|no",
+				"description": "Use the SDR auto gain, e.g. no. If no, then the gain xx value is used.",
+				"hidden": "no"
+			}
+		}
+	},
+	"config-SSTV.json": {
+		"description": "SSTV configuration",
+		"required": "yes",
+		"field validation": {
+			"gain 20": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for up to 20 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 30": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 20 and less than or equal to 30 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 60": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 30 and less than or equal to 60 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 90": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 60 and less than or equal to 90 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"auto gain": {
+				"required": "no",
+				"valid values": "yes|no",
+				"description": "Use the SDR auto gain, e.g. no. If no, then the gain xx value is used.",
+				"hidden": "no"
+			}
+		}
+	},
+	"config-METEOR.json": {
+		"description": "Meteor configuration",
+		"required": "yes",
+		"field validation": {
+			"gain 20": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for up to 20 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 30": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 20 and less than or equal to 30 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 60": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 30 and less than or equal to 60 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 90": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 60 and less than or equal to 90 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"auto gain": {
+				"required": "no",
+				"valid values": "yes|no",
+				"description": "Use the SDR auto gain, e.g. no. If no, then the gain xx value is used.",
+				"hidden": "no"
+			},
+			"thumbnail size": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Thumbnail image size in pixels, e.g. 800 800",
+				"hidden": "no"
+			},
+			"thumbnail quality": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "JPEG quality setting for the thumbnail, should be between 1 and 100, e.g. 75",
+				"hidden": "no"
+			},
+			"main image quality": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "JPEG quality setting for the main image, should be between 1 and 100, e.g. 92",
+				"hidden": "no"
+			},
+			"image minimum": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Minimum size of the normal image, below which the pass files will be removed, e.g.150000",
+				"hidden": "no"
+			},
+			"tweet": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Tweet to the configured Twitter account, e.g. yes",
+				"hidden": "no"
+			},
+			"tweet min elevation": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Minimum elevation to tweet an image, e.g. 20",
+				"hidden": "no"
+			},
+			"discord min elevation": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Minimum elevation to webhook an image, e.g. 20",
+				"hidden": "no"
+			},
+			"discord webhooks": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Send post to Discord webhooks (tweet must be yes for this to happen), e.g. yes",
+				"hidden": "no"
+			},
+			"discord colour": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Discord post colour bar which uses rrggbb for the colour as a hexidecimal value, e.g. ff0000",
+				"hidden": "no"
+			}
+		}
+	},
+	"config-NOAA.json": {
+		"description": "NOAA configuration",
+		"required": "yes",
+		"field validation": {
+			"Branding": {
+				"required": "yes",
+				"valid values": "-any-",
+				"description": "Branding text for the top of all NOAA images, can be blank, e.g. Kiwi Weather",
+				"hidden": "no"
+			},
+			"Population": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Minimum population for cities to be shown on the map, e.g. 10000000",
+				"hidden": "no"
+			},
+			"thumbnail size": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Thumbnail image size in pixels, e.g. 300 300",
+				"hidden": "no"
+			},
+			"thumbnail quality": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "JPEG quality setting for the thumbnail, should be between 1 and 100, e.g. 75",
+				"hidden": "no"
+			},
+			"main image quality": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "JPEG quality setting for the main image, should be between 1 and 100, e.g. 92",
+				"hidden": "no"
+			},
+			"gain 20": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for up to 20 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 30": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 20 and less than or equal to 30 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 60": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 30 and less than or equal to 60 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"gain 90": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR gain setting for above 60 and less than or equal to 90 degree pass maximum elevation, e.g. 37.2",
+				"hidden": "no"
+			},
+			"auto gain": {
+				"required": "no",
+				"valid values": "yes|no",
+				"description": "Use the SDR auto gain, e.g. no. If no, then the gain xx value is used.",
+				"hidden": "no"
+			},
+			"sample rate": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "SDR bandwidth in Hz for recording NOAA audio, e.g. 37000",
+				"hidden": "no"
+			},
+			"image minimum": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Minimum size of the normal image, below which the pass files will be removed, e.g. 30000",
+				"hidden": "no"
+			},
+			"tweet": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Tweet to the configured Twitter account, e.g. yes",
+				"hidden": "no"
+			},
+			"tweet min elevation": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Minimum elevation to tweet an image, e.g. 20",
+				"hidden": "no"
+			},
+			"discord min elevation": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Minimum elevation to webhook an image, e.g. 20",
+				"hidden": "no"
+			},
+			"discord webhooks": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Send post to Discord webhooks (tweet must be yes for this to happen), e.g. yes",
+				"hidden": "no"
+			},
+			"discord colour": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Discord post colour bar which uses rrggbb for the colour as a hexidecimal value, e.g. ff0000",
+				"hidden": "no"
+			},
+			"projection type": {
+				"required": "yes",
+				"valid values": "mercator|cylindrical|cyl-area|eckert4|eckert6|mollweide|miller|lambert|stereographic|azimuth|leac|orthographic",
+				"description": "Projection type to use, e.g. eckert4",
+				"hidden": "no"
+			},
+			"projection N/S type": {
+				"required": "yes",
+				"valid values": "N|S",
+				"description": "Hemisphere for the projection, e.g. S",
+				"hidden": "no"
+			},
+			"projection bounding box": {
+				"required": "yes",
+				"valid values": "-any-",
+				"description": "Bounding box for the projection, e.g. 0,-80,140,-150",
+				"hidden": "no"
+			}
+		}
+	},
+	"config-rsync.json": {
+		"description": "rsync configuration",
+		"required": "yes",
+		"field validation": {
+			"remote user": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Name of the user on the system where the files are copied to via rsync, e.g. USER.",
+				"hidden": "yes"
+			},
+			"remote directory": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Name of the directory on the system where the files are copied to via rsync, e.g. /home/USER/wxcapture/output.",
+				"hidden": "yes"
+			},
+			"remote host": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "IP address for the system where the files are copied to via rsync, e.g. 10.0.0.1.",
+				"hidden": "yes"
+			}
+		}
+	},
+	"config-twitter.json": {
+		"description": "Twitter configuration",
+		"required": "yes",
+		"field validation": {
+			"tweet to": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Twitter handle of the account to tweet from, prefixed by an @, e.g. @RaspberryPiNZ.",
+				"hidden": "no"
+			},
+			"consumer key": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Consumer key for the Twitter API credentials as configured in Twitter",
+				"hidden": "yes"
+			},
+			"consumer secret": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Consumer secret for the Twitter API credentials as configured in Twitter",
+				"hidden": "yes"
+			},
+			"access token": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Access token for the Twitter API credentials as configured in Twitter",
+				"hidden": "yes"
+			},
+			"access token secret": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Access token secret for the Twitter API credentials as configured in Twitter",
+				"hidden": "yes"
+			}
+		}
+	},
+	"satellites.json": {
+		"description": "Satellites configuration",
+		"required": "yes",
+		"field validation": {
+			"name": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Descriptive name for the satellite, e.g. METEOR-M 2.",
+				"hidden": "no"
+			},
+			"NORAD catalog number": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "NORAD catalog number for the satellite, e.g. 40069",
+				"hidden": "no"
+			},
+			"frequency": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Frequency that the satellite broadcasts on and that the SDR will be tuned to, e.g. 137.1000",
+				"hidden": "no"
+			},
+			"meteor symbol rate": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Symbol rate for Meteor satellites, e.g. 72000, otherwise set to 0",
+				"hidden": "no"
+			},
+			"meteor mode": {
+				"required": "yes",
+				"valid values": "n/a|qpsk|oqpsk",
+				"description": "Decoder mode for Meteor satellites, e.g. qpsk, otherwise set to n/a",
+				"hidden": "no"
+			},
+			"type": {
+				"required": "yes",
+				"valid values": "NOAA|METEOR|SSTV|AMSAT",
+				"description": "Type of satellite, e.g. METEOR",
+				"hidden": "no"
+			},
+			"active": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "If the satellite is active then it will be included in the table of predicted passes, e.g. yes.",
+				"hidden": "no"
+			},
+			"capture": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Controls if the pass will be captured, e.g. yes. Note that this will only happen if the value of active is yes.",
+				"hidden": "no"
+			},
+			"night": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "Controls if the pass will be captured at night for Meteor sattellites, otherwise set to yes for other satellites.",
+				"hidden": "no"
+			},
+			"priority": {
+				"required": "yes",
+				"valid values": "-number-",
+				"description": "Relative priority to capture this satellite compared to other satellites, e.g. 10, with higher priority satellites taking priority over lower priority satellites to be captured if there are overlapping passes by multiple satellites.",
+				"hidden": "no"
+			},
+			"sdr": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Which SDR (and antenna) to use to record the capture, e.g. QFH. There must be corresponding data in the sdr.json file for this value.",
+				"hidden": "no"
+			}
+		}
+	},
+	"sdr.json": {
+		"description": "SDR configuration",
+		"required": "yes",
+		"field validation": {
+			"name": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Descriptive name for the SDF, e.g. QFH.",
+				"hidden": "no"
+			},"antenna": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Descriptive name for the antenna that is connected to the SDR, e.g. Quadrifilar Helicoidal antenna",
+				"hidden": "no"
+			},
+			"chipset": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Chipset name used by the SDR, e.g. RTL2838UHIDIR",
+				"hidden": "no"
+			},
+			"sdr type": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Descriptive name for the SDR, e.g. RTL-SDR v3",
+				"hidden": "no"
+			},
+			"centre frequency": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Centre frequency to which the antenna that is connected to the SDR is tuned to, e.g. 137.6 MHz",
+				"hidden": "no"
+			},
+			"frequency range": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Frequency range to which the antenna that is connected to the SDR is sensitive to, e.g. 135-140 MHz from bandpass filter",
+				"hidden": "no"
+			},
+			"modules": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "Modules which are between the antenna and the SDR, e.g. RTL-SDR FM Block, Nooelec NOAA Sawbird (LNA + Bandpass Filter)",
+				"hidden": "no"
+			},
+			"sdr active": {
+				"required": "yes",
+				"valid values": "yes|no",
+				"description": "If the SDR is active or not, e.g. yes",
+				"hidden": "no"
+			},
+			"serial number": {
+				"required": "yes",
+				"valid values": "-pattern-",
+				"description": "SDR serial number, e.g. 00000001",
+				"hidden": "no"
+			},
+			"bias t": {
+				"required": "yes",
+				"valid values": "on|off",
+				"description": "If the bias T needs to be enabled for the SDR, e.g. on. Only do this if there is something using bias T as otherwise you may damage your SDR. This currently assumes an RTL-SDR v3 is being used.",
+				"hidden": "no"
+			}
+		}
+	}
+}

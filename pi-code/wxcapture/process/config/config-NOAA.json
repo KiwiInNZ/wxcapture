@@ -1,0 +1,247 @@
+{
+	"Branding": "KiwiWeather.com @kiwiweather_com ZL4MDE",
+	"Population": 100000,
+	"thumbnail size": "300 300",
+	"thumbnail quality": "75",
+	"main image quality": "92",
+	"auto gain": "no",
+	"gain 20": "37.2",
+	"gain 30": "28.8",
+	"gain 60": "28.8",
+	"gain 90": "28.8",
+	"sample rate": "37000",
+	"image minimum": "3000",
+	"tweet": "yes",
+	"tweet groups": [{
+		"group 1": [{
+				"type": "mcir-precip",
+				"text": "Latest weather satellite pass over [LOCATION] from [SATELLITE] on [PASS START], highlighting potential precipitation (see more at https://kiwiweather.com)."
+			},
+			{
+				"type": "hvct-precip",
+				"text": "[SATELLITE] weather satellite pass over [LOCATION] captured on [PASS START], highlighting potential precipitation (see more at https://kiwiweather.com)."
+			}
+		],
+		"group 2": [{
+				"type": "therm",
+				"text": "Air temperature map captured by the [SATELLITE] weather satellite pass over [LOCATION], captured on [PASS START] (see more at https://kiwiweather.com)."
+			},
+			{
+				"type": "sea",
+				"text": "Sea temperature map captured by the [SATELLITE] weather satellite pass over [LOCATION], captured on [PASS START] (see more at https://kiwiweather.com)."
+			},
+			{
+				"type": "contrasta",
+				"text": "[CHANNEL A] from the [SATELLITE] weather satellite pass over [LOCATION], captured on [PASS START] (see more at https://kiwiweather.com)."
+			}
+		]
+	}],
+	"tweet min elevation": "20",
+	"discord min elevation": "20",
+	"discord webhooks": "yes",
+	"discord colour": "00ff00",
+	"discord groups": [{
+		"group 1": [{
+				"type": "mcir-precip"
+			},
+			{
+				"type": "hvct-precip"
+			}
+		],
+		"group 2": [{
+				"type": "therm"
+			},
+			{
+				"type": "sea"
+			},
+			{
+				"type": "contrasta"
+			}
+		]
+	}],
+	"projection type": "eckert4",
+	"projection N/S type": "S",
+	"projection bounding box": "0,-80,130,-140",
+	"enhancements": {
+		"008": {
+			"description": "Contrast - channel A image",
+			"options": "-e contrast -a",
+			"clahe": "yes",
+			"active": "yes",
+			"filename": "contrasta",
+			"scale": "no",
+			"projection": "no"
+		},
+		"009": {
+			"description": "Contrast - channel B image",
+			"options": "-e contrast -b",
+			"clahe": "yes",
+			"active": "yes",
+			"filename": "contrastb",
+			"scale": "no",
+			"projection": "no"
+		},
+		"999": {
+			"description": "Contrast - channels A,B image",
+			"options": "-e contrast",
+			"clahe": "no",
+			"active": "no",
+			"filename": "contrast",
+			"scale": "no",
+			"projection": "no"
+		},
+		"998": {
+			"description": "Histogram equalisation image",
+			"options": "-e histeq",
+			"clahe": "no",
+			"active": "no",
+			"filename": "histeq",
+			"scale": "no",
+			"projection": "no"
+		},
+		"004": {
+			"description": "Coloured infrared image",
+			"options": "-e MCIR",
+			"clahe": "no",
+			"active": "yes",
+			"filename": "mcir",
+			"scale": "no",
+			"projection": "no"
+		},
+		"003": {
+			"description": "Coloured IR image highlighting precipitation",
+			"options": "-e MCIR-precip",
+			"clahe": "no",
+			"active": "yes",
+			"filename": "mcir-precip",
+			"scale": "no",
+			"projection": "yes"
+		},
+		"005": {
+			"description": "Normal image",
+			"options": "",
+			"clahe": "yes",
+			"active": "yes",
+			"filename": "norm",
+			"scale": "no",
+			"projection": "no"
+		},
+		"13": {
+			"description": "Pristine output image",
+			"options": "-e pris",
+			"clahe": "no",
+			"active": "yes",
+			"filename": "pris",
+			"scale": "no",
+			"projection": "no"
+		},
+		"007": {
+			"description": "Sea surface temperature image",
+			"options": "-e sea",
+			"clahe": "no",
+			"active": "yes",
+			"filename": "sea",
+			"scale": "yes",
+			"projection": "yes"
+		},
+		"006": {
+			"description": "Air temperature image",
+			"options": "-e therm",
+			"clahe": "no",
+			"active": "yes",
+			"filename": "therm",
+			"scale": "yes",
+			"projection": "yes"
+		},
+		"001": {
+			"description": "Enhanced infra red image",
+			"options": "-e ZA",
+			"clahe": "yes",
+			"active": "yes",
+			"filename": "za",
+			"scale": "yes",
+			"projection": "no"
+		},
+		"997": {
+			"description": "Hurricane enhanced image",
+			"options": "-e BD",
+			"clahe": "no",
+			"active": "no",
+			"filename": "bd",
+			"scale": "yes",
+			"projection": "no"
+		},
+		"996": {
+			"description": "Warm season enhanced image",
+			"options": "-e MD",
+			"clahe": "no",
+			"active": "no",
+			"filename": "md",
+			"scale": "yes",
+			"projection": "no"
+		},
+		"995": {
+			"description": "Thunderstorm enhanced image",
+			"options": "-e MB",
+			"clahe": "no",
+			"active": "no",
+			"filename": "mb",
+			"scale": "yes",
+			"projection": "no"
+		},
+		"002": {
+			"description": "No colour infrared enhanced image",
+			"options": "-e NO",
+			"clahe": "no",
+			"active": "yes",
+			"filename": "no",
+			"scale": "no",
+			"projection": "no"
+		},
+		"994": {
+			"description": "Sea surface / cold cloud enhanced image",
+			"options": "-e JF",
+			"clahe": "no",
+			"active": "no",
+			"filename": "jf",
+			"scale": "no",
+			"projection": "no"
+		},
+		"010": {
+			"description": "Multispecteral analysis enhanced image",
+			"options": "-e MSA",
+			"clahe": "no",
+			"active": "yes",
+			"filename": "msa",
+			"scale": "no",
+			"projection": "no"
+		},
+		"012": {
+			"description": "HVC enhanced image",
+			"options": "-e HVCT",
+			"clahe": "no",
+			"active": "yes",
+			"filename": "hvct",
+			"scale": "no",
+			"projection": "no"
+		},
+		"011": {
+			"description": "HVC enhanced image highlighting precipitation",
+			"options": "-e HVCT-precip",
+			"clahe": "no",
+			"active": "yes",
+			"filename": "hvct-precip",
+			"scale": "no",
+			"projection": "no"
+		},
+		"993": {
+			"description": "Multispecteral image highlighting precipitation",
+			"options": "-e MSA-precip",
+			"clahe": "no",
+			"active": "no",
+			"filename": "msa-precip",
+			"scale": "no",
+			"projection": "no"
+		}
+	}
+}

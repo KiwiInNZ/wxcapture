@@ -1,0 +1,110 @@
+[
+	{
+		"Display Name": "GK-2A",
+		"Location": "gk-2a",
+		"Test Image": "FD.jpg",
+		"Max Age": "40",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "GOES 17",
+		"Location": "goes",
+		"Test Image": "goes_17_fd_fc.jpg",
+		"Max Age": "120",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "GOES 16",
+		"Location": "goes",
+		"Test Image": "goes_16_fd_ch13.jpg",
+		"Max Age": "120",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "GOES 15",
+		"Location": "goes",
+		"Test Image": "goes_15_fd_IR.jpg",
+		"Max Age": "720",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "GOES 15 GVAR",
+		"Location": "goes",
+		"Test Image": "goes15gvar-FC.jpg",
+		"Max Age": "240",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "GOES 14",
+		"Location": "goes",
+		"Test Image": "goes14-FC.jpg",
+		"Max Age": "240",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "GOES 13",
+		"Location": "goes",
+		"Test Image": "goes13-FC.jpg",
+		"Max Age": "240",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "Himawari 8",
+		"Location": "goes",
+		"Test Image": "himawari_8_fd_IR.jpg",
+		"Max Age": "120",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "Himawari 9",
+		"Location": "goes",
+		"Test Image": "himawari_9_fd_IR.jpg",
+		"Max Age": "120",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "Electro-L 2",
+		"Location": "goes",
+		"Test Image": "electro-l-2-rgb.jpg",
+		"Max Age": "300",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "Polar orbiting predictions",
+		"Location": "",
+		"Test Image": "satpass.html",
+		"Max Age": "1500",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	},
+	{
+		"Display Name": "Polar passes",
+		"Location": "",
+		"Test Image": "polar.txt",
+		"Max Age": "720",
+		"Last Status": "good",
+		"Status Change": "",
+		"Active": "yes"
+	}
+]

@@ -1,0 +1,10 @@
+{
+	"logging level": "debug",
+	"Link Base": "/",
+	"web doc root location": "/home/websites/wxcapture/",
+	"webpage keywords": "wxcapture, weather, satellite, NOAA, Meteor, images, ISS, Zarya, SSTV, Amsat, orbit, APT, LRPT, SDR, Mike, KiwiinNZ, Predictions, Auckland, New Zealand, storm, cyclone, hurricane, front, rain, wind, cloud",
+	"drive space location": "/home",
+	"drive space error": "90",
+	"drive space warning": "70",
+	"skip header and footer": "no"
+}
