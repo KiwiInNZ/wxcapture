@@ -423,7 +423,10 @@ process_goes2('15gvar')
 process_goes('16')
 
 # process GOES 17 files
-process_goes('17')
+process_goes('18')
+
+# process GOES 17 files
+process_goes('18')
 
 # process Himawari 8 files
 process_himawari('8')
